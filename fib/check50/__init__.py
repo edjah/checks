@@ -35,9 +35,9 @@ class Square(Checks):
     @check("compiles")
     def fib_10(self):
         """fibonacci.c computes 10th fibonacci number as 55"""
-        self.spawn("./fibonacci 10").stdout("^55\n", "784\n")
+        self.spawn("./fibonacci 10").stdout("^55\n", "55\n")
 
     @check("compiles")
     def fib_46(self):
         """fibonacci.c computes 46th fibonacci number as 1836311903"""
-        self.spawn("./fibonacci 45").stdout("^1836311903\n", "784\n")
+        self.spawn("./fibonacci 46").stdout("^1836311903\n", "1836311903\n")
